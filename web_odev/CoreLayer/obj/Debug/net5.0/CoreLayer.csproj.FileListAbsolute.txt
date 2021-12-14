@@ -1,0 +1,12 @@
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\bin\Debug\net5.0\CoreLayer.deps.json
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\bin\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\akyol61\source\repos\web_odev\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb

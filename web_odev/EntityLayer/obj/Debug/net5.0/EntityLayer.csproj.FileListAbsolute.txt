@@ -1,0 +1,12 @@
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\akyol61\source\repos\web_odev\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
