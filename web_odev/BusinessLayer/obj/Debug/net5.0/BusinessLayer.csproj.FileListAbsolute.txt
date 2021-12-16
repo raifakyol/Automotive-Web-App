@@ -1,0 +1,17 @@
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\BusinessLayer.deps.json
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\BusinessLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\ref\BusinessLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\BusinessLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+C:\Users\akyol61\source\repos\web_odev\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete
