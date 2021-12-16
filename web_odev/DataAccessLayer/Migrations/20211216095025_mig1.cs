@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccessLayer.Migrations
 {
@@ -29,6 +29,20 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Gallerys",
+                columns: table => new
+                {
+                    GalleryID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    GalleryAd = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    GalleryResim = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Gallerys", x => x.GalleryID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Options",
                 columns: table => new
                 {
@@ -43,6 +57,24 @@ namespace DataAccessLayer.Migrations
                 {
                     table.PrimaryKey("PK_Options", x => x.Opsiyon_ID);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    KullaniciID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Kullanici_AdSoyad = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Marka = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Model = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Plaka = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Kullanici_Tarih = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Telefon = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.KullaniciID);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -51,7 +83,13 @@ namespace DataAccessLayer.Migrations
                 name: "Cars");
 
             migrationBuilder.DropTable(
+                name: "Gallerys");
+
+            migrationBuilder.DropTable(
                 name: "Options");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }
