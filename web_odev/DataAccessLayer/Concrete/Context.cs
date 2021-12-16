@@ -16,6 +16,8 @@ namespace DataAccessLayer.Concrete
         }
         public DbSet<Arac> Cars { get; set; }
         public DbSet<Opsiyonlar> Options { get; set; }
+        public DbSet<Gallery> Gallerys { get; set; }
+        public DbSet<Kullanici> Users { get; set; }
 
 
     }
