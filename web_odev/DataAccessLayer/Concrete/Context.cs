@@ -18,7 +18,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Opsiyonlar> Options { get; set; }
         public DbSet<Gallery> Gallerys { get; set; }
         public DbSet<Kullanici> Users { get; set; }
-
+        public DbSet<Admin> Admins { get; set; }
 
     }
 }
