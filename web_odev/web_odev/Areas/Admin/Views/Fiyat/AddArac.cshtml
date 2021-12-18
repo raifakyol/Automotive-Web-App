@@ -1,0 +1,38 @@
+﻿@model EntityLayer.Concrete.Arac
+@{
+    ViewData["Title"] = "AddArac";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>AddArac</h1>
+
+@using (Html.BeginForm("AddArac", "Arac", FormMethod.Post))
+{
+    @Html.Label("Marka")
+    @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
+    <br />
+    @Html.Label("Model")
+    @Html.TextBoxFor(x => x.Model, new { @class = "form-control" })
+    <br />
+    @Html.Label("Donanım")
+    @Html.TextBoxFor(x => x.Donanim, new { @class = "form-control" })
+    <br />
+    @Html.Label("Motor Hacmi")
+    @Html.TextBoxFor(x => x.Motor_hacmi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Yakıt Tipi")
+    @Html.TextBoxFor(x => x.Yakit_tipi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Vites Tipi")
+    @Html.TextBoxFor(x => x.Vites_tipi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Arac Bg")
+    @Html.TextBoxFor(x => x.AracBg, new { @class = "form-control" })
+    <br />
+    @Html.Label("Fiyat")
+    @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Araç Kaydet</button>
+    <br />
+    <br />
+}

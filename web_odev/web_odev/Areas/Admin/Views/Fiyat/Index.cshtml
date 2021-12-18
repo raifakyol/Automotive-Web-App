@@ -1,0 +1,41 @@
+﻿@using EntityLayer.Concrete
+@model List<Arac>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Indexx</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Marka</th>
+        <th>Model</th>
+        <th>Donanım</th>
+        <th>Motor Hacmi</th>
+        <th>Yakıt Tipi</th>
+        <th>Vites Tipi</th>
+        <th>Arac Bg</th>
+        <th>Fiyat</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.AracID</th>
+            <td>@item.Marka</td>
+            <td>@item.Model</td>
+            <td>@item.Donanim</td>
+            <td>@item.Motor_hacmi</td>
+            <td>@item.Yakit_tipi</td>
+            <td>@item.Vites_tipi</td>
+            <td>@item.AracBg</td>
+            <td>@item.Fiyat</td>
+            <td><a href="#" class="btn btn-success">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/Fiyat/AddArac/" class="btn btn-primary">Yeni Araç Ekle</a>
+<br />
+<br />
