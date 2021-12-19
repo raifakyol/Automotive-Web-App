@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="%20’den başlayan indirimli fiyatlar ve %30 işçilik indirimi, 4 yaş ve üzerindeki tüm Renault araçların bakım ve mekanik onarımlarında, 31.12.2021 tarihine kadar geçerlidir." xml:space="preserve">
+    <value>discounted prices starting from 20% and a labor discount of 30% are valid for maintenance and mechanical repairs of all Renault vehicles aged 4 years and older until 31.12.2021.</value>
+  </data>
+  <data name="(Aylık Bireysel Maliyet Oranı; % 2,05, Yıllık Bireysel Maliyet Oranı; % 27,61)" xml:space="preserve">
+    <value>(Individual Cost Rate per Month; 2.05%, Individual Cost Rate per Year; 27.61%)</value>
+  </data>
+  <data name="*  Bu kampanya 2 Ocak - 31 Aralık 2021 tarihleri arasında ve yetkili servise gireceği tarih itibariyle trafiğe çıkış tarihinin üzerinden 2 yıldan daha fazla geçmiş Volkswagen Binek Araç modelleri için geçerlidir. Kampanya koşullarına uyan ZUBİZU üyeleri bu fırsattan yararlanabilirler." xml:space="preserve">
+    <value>Dec January 2 - December 31, 2021 * This campaign is valid for Volkswagen Passenger Car models that have been in traffic for more than 2 years since the date of entry into authorized service and as of the date of entry into authorized service. ZUBIZU members who comply with the campaign conditions can take advantage of this opportunity.</value>
+  </data>
+  <data name="**  Tavsiye edilen indirim oranları; mekanik ve elektrik tüm yedek parçalar, mekanik ve elektrik atölye işçiliği için geçerlidir. Kampanya kapsamında belirlenmiş Michelin, Pirelli ve Continental marka lastiklerde ise 2 yaş üzeri tüm Volkswagen Binek Araç modellerine %16 indirim sunulmaktadır. 3 ve 4 yaşındaki Volkswagen Binek Araç modellerinde, motor yağlarında indirim bulunmamaktadır." xml:space="preserve">
+    <value>** Recommended discount rates apply to all spare parts, mechanical and electrical workshop work, mechanical and electrical. Michelin, Pirelli and Continental brand tires designated as part of the campaign offer a 16% discount on all Volkswagen Passenger Car models over the age of 2. there are no discounts on 3- and 4-year-old Volkswagen Passenger Car models, engine oils.</value>
+  </data>
+  <data name="***  Mobilite Hizmet Paketi, ücretsiz acil servis ve çekici hizmetini kapsamaktadır. Bu paket, Volkswagen Yetkili Servislerinde yapılan periyodik bakımın tamamlandığı tarihten itibaren 1 takvim yılı boyunca geçerli olacak şekilde tanımlanır. Her yeni periyodik bakım işleminde, eğer halen devam ediyorsa, bir önceki tanımlı Mobilite Hizmet Paketi iptal edilir ve yeni paket tanımlanır. Paketten faydalanmak için, ihtiyaç halinde 444 8924 no’lu Volkswagen Yol Yardım hattının aranması yeterlidir." xml:space="preserve">
+    <value>*** The Mobility Service Package includes a free emergency service and a tow truck service. This package is defined to be valid for 1 calendar year from the date of completion of periodic maintenance performed at Volkswagen Authorized Services. With each new periodic maintenance process, if it is still ongoing, the previous defined Mobility Service Pack is canceled and a new pack is defined. To take advantage of the package, it is enough to call the Volkswagen Road Helpline on 444 8924 if necessary.</value>
+  </data>
+  <data name="****  Akyol Otomotiv, kampanya koşullarını ve süresini değiştirme hakkını saklı tutar." xml:space="preserve">
+    <value>**** Akyol Automotive reserves the right to change the terms and duration of the campaign.</value>
+  </data>
+  <data name="***** Yabancı plakalı araçlar için geçerli değildir." xml:space="preserve">
+    <value>***** Does not apply to vehicles with foreign license plates.</value>
+  </data>
+  <data name="3 ve 4 yaşındaki Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %15 ve kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim (motor yağlarında indirim bulunmamaktadır)" xml:space="preserve">
+    <value>periodic maintenance of 3- and 4-year-old Volkswagen Passenger Car models, 15% discount on parts used in mechanical and electrical work and their workmanship and 16% discount on tire brands designated as part of the campaign (there is no discount on engine oils)</value>
+  </data>
+  <data name="4 YAŞ VE ÜZERİ RENAULT’NUZUN BAKIM &amp; MEKANİK ONARIM İŞÇİLİKLERİNDE %30 İNDİRİM" xml:space="preserve">
+    <value>30% DISCOUNT ON MAINTENANCE &amp; MECHANICAL REPAIR WORK OF YOUR RENAULT AGED 4 YEARS AND OVER</value>
+  </data>
+  <data name="4 yaş üstü Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %25, kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim ve motor yağlarında %16 indirim" xml:space="preserve">
+    <value>periodic maintenance of Volkswagen Passenger Car models over the age of 4, 25% discount on parts used in mechanical and electrical works and their workmanship, 16% discount for tire brands designated as part of the campaign and 16% discount on engine oils</value>
+  </data>
+  <data name="7 yaş üstü Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %30, kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim ve motor yağlarında %16 indirim" xml:space="preserve">
+    <value>periodic maintenance of Volkswagen Passenger Car models over 7 years of age, 30% discount on parts used in mechanical and electrical works and their workmanship, 16% discount on tire brands specified within the scope of the campaign and 16% discount on engine oils</value>
+  </data>
+  <data name="Adres:" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="AKYOL OTOMOTİV" xml:space="preserve">
+    <value>AKYOL AUTOMOTIVE</value>
+  </data>
+  <data name="Ayrıca, kampanyadan yararlanarak periyodik bakımını Volkswagen Yetkili Servislerinde yaptıran Volkswagen sahiplerine 1 yıllık Mobilite Hizmet Paketi de hediye!***" xml:space="preserve">
+    <value>In addition, a 1-year Mobility Service Package is also a gift to Volkswagen owners who make periodic maintenance at Volkswagen Authorized Services using the campaign!***</value>
+  </data>
+  <data name="Bize Ulaşın" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Bu teklif, katılımcı Renault Yetkili Servislerinde geçerlidir. Uygulamaya katılan Renault Yetkili Servislerinde “Kapında Vale” ve ücretsiz dezenfeksiyon hizmeti sunulmaktadır. Ayrıntılı bilgi için Renault Yetkili Servislerine başvurabilirsiniz. MAİS A.Ş., kampanya kapsamında değişiklik yapma hakkını saklı tutar." xml:space="preserve">
+    <value>This offer is valid for participating Renault Authorized Services. Renault Authorized Services participating in the application include “Valet at your door” and free disinfection service. For detailed information, you can contact Renault Authorized Services. MAIS A.Sh., reserves the right to make changes within the scope of the campaign.</value>
+  </data>
+  <data name="Detay" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="Detaylı bilgi için Akyol Otomotiv iletişim hesaplarına ulaşabilirsiniz." xml:space="preserve">
+    <value>For detailed information, you can contact Akyol Automotive contact accounts.</value>
+  </data>
+  <data name="Eğer siz de 2 yaş üzeri bir Volkswagen Binek Araç modeline sahipseniz, ZUBİZU mobil uygulamasını kullanarak bu indirimlerden faydalanabilirsiniz.*Kampanya dahilinde;" xml:space="preserve">
+    <value>If you have a Volkswagen Passenger Car model over the age of 2, you can take advantage of these discounts by using the ZUBIZU mobile application.*Within the campaign;</value>
+  </data>
+  <data name="Finansman kampanyaları anlaşmalı finans kuruluşunun şartlarına bağlıdır. Kampanyalı faiz oranları Maxxi Koruma (Kredi Koruma Sigortası) ile birlikte geçerlidir. Maxxi Koruma ürününün satın alınmadığı durumda, anlaşmalı finans kuruluşunun baz faiz oranı uygulanır. Finansman kampanyaları birleştirilemez. Kredi tahsis ücretleri kredi bedeline dahil değildir. Faiz oranı ve maliyet oranları, kullanılacak kredi tutarı ve vadeye göre değişmektedir." xml:space="preserve">
+    <value>Financing campaigns depend on the terms of the contracted financial institution. The campaign interest rates are valid together with Maxxi Protection (Credit Protection Insurance). In the event that the Maxxi Protection product is not purchased, the base interest rate of the contracted financial institution applies. Financing campaigns cannot be combined. Credit allocation fees are not included in the loan price. The interest rate and cost rates vary depending on the loan amount to be used and the maturity.</value>
+  </data>
+  <data name="Fiyat Listeleri" xml:space="preserve">
+    <value>PRICE LISTS</value>
+  </data>
+  <data name="Giriş" xml:space="preserve">
+    <value>LOG IN</value>
+  </data>
+  <data name="Kampanyada, 100.000 TL kredi, 24 ay vade ve %1,67 faiz oranı ile aylık ödeme 5.430 TL’dir." xml:space="preserve">
+    <value>In the campaign, a loan of 100,000 TL, a maturity of 24 months and a monthly payment with an interest rate of 1.67% is 5,430 TL.</value>
+  </data>
+  <data name="KAMPANYALAR" xml:space="preserve">
+    <value>CAMPAIGNS</value>
+  </data>
+  <data name="Kayıt Ol!" xml:space="preserve">
+    <value>SIGN UP</value>
+  </data>
+  <data name="Kazandıran Servis orijinal parça değişimi ve bakımlarda %40’a varan kış indirimleriyle şimdi Doğuş Oto Yetkili Servislerinde." xml:space="preserve">
+    <value>The Service that Saves money is now in Doğuş Oto Authorized Services with up to 40% winter discounts on original parts replacement and maintenance.</value>
+  </data>
+  <data name="Keşfet" xml:space="preserve">
+    <value>ABOUT US</value>
+  </data>
+  <data name="Opsiyonlar" xml:space="preserve">
+    <value>OPTIONS</value>
+  </data>
+  <data name="Renault Finans’tan kredi kullanılması durumunda geçerli olan ilgili kampanya, sınırlı sayıdaki 2021 model Yeni Clio Touch 1.0 TCe X-Tronic 90 bg otomobilinin perakende satın alımında geçerlidir." xml:space="preserve">
+    <value>The relevant campaign, valid if a loan is used from Renault Finans, is valid for the retail purchase of a limited number of New 2021 Clio Touch 1.0 TCe X-Tronic 90 hp cars.</value>
+  </data>
+  <data name="Renault Finans’tan kredi kullanılması durumunda geçerli olan ilgili kampanya, sınırlı sayıdaki 2021 model Yeni Clio Touch 1.0 TCe X-Tronic 90 bg otomobilinin perakende satın alımında geçerlidir. Kampanyada, 100.000 TL kredi, 24 ay vade ve %1,67 faiz oranı ile aylık ödeme 5.430 TL’dir." xml:space="preserve">
+    <value>The relevant campaign, valid if a loan is used from Renault Finans, is valid for the retail purchase of a limited number of New 2021 Clio Touch 1.0 TCe X-Tronic 90 hp cars. In the campaign, a loan of 100,000 TL, a maturity of 24 months and a monthly payment with an interest rate of 1.67% is 5,430 TL.</value>
+  </data>
+  <data name="Servis Randevu" xml:space="preserve">
+    <value>APPOINTMENT</value>
+  </data>
+  <data name="Siz de ticari aracınızı Volkswagen Ticari Araç Yetkili Servisi Doğuş Oto'ya getirin, her gelişinizde artan indirimler sayesinde Kazandıran Servis’te Kışa Hazır Olun." xml:space="preserve">
+    <value>Bring your commercial vehicle to Doğuş Oto, the Authorized Volkswagen Commercial Vehicle Service, and Get Ready for the Winter in Kazandir Servis thanks to the increased discounts every time you come.</value>
+  </data>
+  <data name="Telefon:" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="Volkswagen Zubizu Servis Kampanyası" xml:space="preserve">
+    <value>Volkswagen Zubizu Service Campaign</value>
+  </data>
+  <data name="YEDEK PARÇA VE MOTOR YAĞLARINDA %20 VE ÜZERİ AVANTAJLI FİYATLAR" xml:space="preserve">
+    <value>ADVANTAGEOUS PRICES OF 20% AND MORE FOR SPARE PARTS AND ENGINE OILS</value>
+  </data>
+  <data name="Yeni Clio’nun karma CO2 salımı 105 – 118 g/km; yakıt tüketimi 4,9 – 6,8 lt/100km aralığındadır.Temsili model üzerinde gösterilen aksesuarlar farklılık gösterebilir. Kampanya, stoklarla sınırlı ve 31.12.2021 tarihine kadar katılımcı yetkili satıcılarda geçerlidir. MAİS’in, kampanya bitiş tarihini ve kapsamını değiştirme hakkı saklıdır." xml:space="preserve">
+    <value>The mixed CO2 tuesday of the new Clio is 105 – 118 g/km; fuel consumption is in the range of 4.9 – 6.8 lt/100km.The accessories shown on the representative model may differ. The campaign is limited to stocks and is valid at participating authorized dealers until 31.12.2021. MAIS reserves the right to change the campaign end date and scope.</value>
+  </data>
+  <data name="YENİ CLIO, 100.000 TL KREDİ 24 AY VADE % 1,67 FAİZ FIRSATIYLA" xml:space="preserve">
+    <value>NEW CLIO, 100.000 TL LOAN WITH 24-MONTH MATURITY WITH 1.67% INTEREST OPPORTUNITY</value>
+  </data>
+  <data name="YENİ CLIO, 100.000 TL KREDİ 24 AY VADE %1,67 FAİZ FIRSATIYLA" xml:space="preserve">
+    <value>NEW CLIO, 100.000 TL LOAN WITH 24-MONTH MATURITY WITH 1.67% INTEREST OPPORTUNITY</value>
+  </data>
+  <data name="Zubizu indirim kampanyası başka bir indirim kampanyası ile birleştirilemez." xml:space="preserve">
+    <value>The Zubizu discount campaign cannot be combined with any other discount campaign.</value>
+  </data>
+</root>
