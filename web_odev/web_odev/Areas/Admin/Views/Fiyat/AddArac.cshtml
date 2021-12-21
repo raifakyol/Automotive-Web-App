@@ -1,36 +1,50 @@
-﻿@model EntityLayer.Concrete.Arac
+@model EntityLayer.Concrete.Arac
 @{
     ViewData["Title"] = "AddArac";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h1>AddArac</h1>
+<h1>Fiyat Listesi Paneli</h1>
 
-@using (Html.BeginForm("AddArac", "Arac", FormMethod.Post))
+@using (Html.BeginForm("AddArac", "Fiyat", FormMethod.Post))
 {
+    @Html.Label("Marka ID")
+    @Html.TextBoxFor(x => x.Marka_id, new { @class = "form-control" })
+    <br />
+    @Html.Label("Model ID")
+    @Html.TextBoxFor(x => x.Model_id, new { @class = "form-control" })
+    <br />
     @Html.Label("Marka")
     @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Marka);
     <br />
     @Html.Label("Model")
     @Html.TextBoxFor(x => x.Model, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Model);
     <br />
     @Html.Label("Donanım")
     @Html.TextBoxFor(x => x.Donanim, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Donanim);
     <br />
     @Html.Label("Motor Hacmi")
     @Html.TextBoxFor(x => x.Motor_hacmi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Motor_hacmi);
     <br />
     @Html.Label("Yakıt Tipi")
     @Html.TextBoxFor(x => x.Yakit_tipi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Yakit_tipi);
     <br />
     @Html.Label("Vites Tipi")
     @Html.TextBoxFor(x => x.Vites_tipi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Vites_tipi);
     <br />
     @Html.Label("Arac Bg")
     @Html.TextBoxFor(x => x.AracBg, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.AracBg);
     <br />
     @Html.Label("Fiyat")
     @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Fiyat);
     <br />
     <button class="btn btn-info">Araç Kaydet</button>
     <br />
