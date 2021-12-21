@@ -1,0 +1,38 @@
+﻿@using EntityLayer.Concrete
+@model List<Opsiyonlar>
+@{
+    ViewData["Title"] = "Opsiyon";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Opsiyonlar</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Opsiyon ID</th>
+        <th>Marka ID</th>
+        <th>Model ID</th>
+        <th>Opsiyon</th>
+        <th>Opsiyon Fiyatı</th>
+        <th>Araç ID</th>
+        <th>Opsiyon Sil</th>
+        <!-- <th>Düzenle</th> -->
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <th>@item.Opsiyon_ID</th>
+    <th>@item.Marka_id</th>
+    <th>@item.Model_id</th>
+    <td>@item.Opsiyon_Adi</td>
+    <td>@item.Opsiyon_Fiyati</td>
+    <th>@item.AracID</th>
+    <td><a href="/Admin/Fiyat/DeleteOpsiyonlar/@item.Opsiyon_ID/" id="DeleteBtn" class="btn btn-success" onclick="return confirm('Silmek istediğinize emin misiniz');">Sil</a></td>
+    <!--<td><a href="/Admin/Fiyat/UpdateOpsiyonlar/@item.Opsiyon_ID/" id="UpdateBtn" class="btn btn-success" onclick="return confirm('Düzenlemek istediğinize emin misiniz');">Düzenle</a></td>
+        -->
+</tr>
+    }
+</table>
+<a href="/Admin/Fiyat/AddOpsiyonlar/" class="btn btn-primary">Yeni Opsiyon Ekle</a> <br />
+<br />
+<br />

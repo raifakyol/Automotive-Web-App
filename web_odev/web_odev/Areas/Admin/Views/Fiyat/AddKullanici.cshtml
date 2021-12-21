@@ -1,0 +1,39 @@
+﻿@model EntityLayer.Concrete.Kullanici
+@{
+    ViewData["Title"] = "AddKullanici";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Servis Randevu Paneli</h1>
+
+@using (Html.BeginForm("AddKullanici", "Fiyat", FormMethod.Post))
+{
+    @Html.Label("Ad Soyad")
+    @Html.TextBoxFor(x => x.Kullanici_AdSoyad, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Kullanici_AdSoyad);
+    <br />
+    @Html.Label("Marka")
+    @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Marka);
+    <br />
+    @Html.Label("Model")
+    @Html.TextBoxFor(x => x.Model, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Model);
+    <br />
+    @Html.Label("Plaka")
+    @Html.TextBoxFor(x => x.Plaka, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Plaka);
+    <br />
+    @Html.Label("Kullanici_Tarih")
+    @Html.TextBoxFor(x => x.Kullanici_Tarih, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Kullanici_Tarih);
+    <br />
+    @Html.Label("Telefon Numarası")
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Telefon);
+    
+    <br />
+    <button class="btn btn-info">Randevu Kaydet</button>
+    <br />
+    <br />
+}

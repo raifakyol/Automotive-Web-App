@@ -1,0 +1,47 @@
+﻿@using EntityLayer.Concrete
+@model List<Arac>
+@{
+    ViewData["Title"] = "Fiyat";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Fiyat Listeleri</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Arac ID</th>
+        <th>Marka</th>
+        <th>Marka ID</th>
+        <th>Model ID</th>
+        <th>Model</th>
+        <th>Donanım</th>
+        <th>Motor Hacmi</th>
+        <th>Yakıt Tipi</th>
+        <th>Vites Tipi</th>
+        <th>Arac Bg</th>
+        <th>Fiyat</th>
+        <th>Fiyat Sil</th>
+        <!--<th>Düzenle</th>-->
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <th>@item.AracID</th>
+    <th>@item.Marka_id</th>
+    <th>@item.Model_id</th>
+    <td>@item.Marka</td>
+    <td>@item.Model</td>
+    <td>@item.Donanim</td>
+    <td>@item.Motor_hacmi</td>
+    <td>@item.Yakit_tipi</td>
+    <td>@item.Vites_tipi</td>
+    <td>@item.AracBg</td>
+    <td>@item.Fiyat</td>
+    <td><a href="/Admin/Fiyat/DeleteArac/@item.AracID/" id="DeleteBtn" class="btn btn-success" onclick="return confirm('Silmek istediğinize emin misiniz?');">Sil</a></td>
+    <!--<td><a href="#" class="btn btn-success">Düzenle</a></td>-->
+</tr>
+    }
+</table>
+<a href="/Admin/Fiyat/AddArac/" class="btn btn-primary">Yeni Araç Ekle</a> <br />
+<br />
+<br />

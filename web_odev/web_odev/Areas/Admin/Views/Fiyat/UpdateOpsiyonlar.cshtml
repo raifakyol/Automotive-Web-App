@@ -1,0 +1,32 @@
+﻿@model EntityLayer.Concrete.Opsiyonlar
+@{
+    ViewData["Title"] = "UpdateOpsiyonlar";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>UpdateOpsiyonlar</h1>
+
+@using (Html.BeginForm("UpdateOpsiyonlar", "Fiyat", FormMethod.Post))
+{
+    @Html.Label("Marka ID")
+    @Html.TextBoxFor(x => x.Marka_id, new { @class = "form-control" })
+    <br />
+    @Html.Label("Model ID")
+    @Html.TextBoxFor(x => x.Model_id, new { @class = "form-control" })
+    <br />
+    @Html.Label("Opsiyon Adı")
+    @Html.TextBoxFor(x => x.Opsiyon_Adi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Opsiyon_Adi);
+
+    <br />
+    @Html.Label("Opsiyon Fiyatı")
+    @Html.TextBoxFor(x => x.Opsiyon_Fiyati, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Opsiyon_Fiyati);
+    <br />
+    @Html.Label("Araç ID")
+    @Html.TextBoxFor(x => x.AracID, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Opsiyon Güncelle</button>
+    <br />
+    <br />
+}
