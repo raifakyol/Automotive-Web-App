@@ -18,6 +18,6 @@ namespace EntityLayer.Concrete
         public string Opsiyon_Fiyati { get; set; }
 
         public int AracID { get; set; }
-        public Arac Arac { get; set; } 
+        public Arac Arac { get; set; }
     }
 }

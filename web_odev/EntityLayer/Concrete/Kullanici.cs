@@ -19,8 +19,5 @@ namespace EntityLayer.Concrete
         public string Plaka { get; set; }
         public string Kullanici_Tarih { get; set; }
         public string Telefon { get; set; }
-
-        public int AracID { get; set; }
-        public Arac Arac { get; set; }
     }
 }

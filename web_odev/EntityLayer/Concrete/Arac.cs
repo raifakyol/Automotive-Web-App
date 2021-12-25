@@ -24,5 +24,6 @@ namespace EntityLayer.Concrete
         public string Fiyat { get; set; }
 
         public List<Opsiyonlar> Options { get; set; }
+        public List<Gallery> Gallerys { get; set; }
     }
 }
