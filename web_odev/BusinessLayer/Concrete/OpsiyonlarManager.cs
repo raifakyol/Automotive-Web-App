@@ -1,4 +1,4 @@
-﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
         }
         public Opsiyonlar GetById(int id)
         {
-            throw new NotImplementedException();
+            return _opsiyonlarDal.GetById(id);
         }
 
         public List<Opsiyonlar> GetList()
@@ -28,19 +28,19 @@ namespace BusinessLayer.Concrete
 
         public void OpsiyonlarAdd(Opsiyonlar arac)
         {
-            throw new NotImplementedException();
+            _opsiyonlarDal.AddOpsiyonlar(arac);
         }
 
         public void OpsiyonlarDelete(Opsiyonlar arac)
         {
-            throw new NotImplementedException();
+            _opsiyonlarDal.DeleteOpsiyonlar(arac);
         }
 
         public void OpsiyonlarUpdate(Opsiyonlar arac)
         {
-            throw new NotImplementedException();
+            _opsiyonlarDal.UpdateOpsiyonlar(arac);
         }
-        
+
 
     }
 }

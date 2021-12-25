@@ -1,4 +1,4 @@
-﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
@@ -16,9 +16,30 @@ namespace BusinessLayer.Concrete
         {
             _admindal = admindal;
         }
+
         public void AdminAdd(Admin admin)
         {
-            _admindal.Insert(admin);
+            _admindal.AddAdmin(admin);
+        }
+
+        public void AdminDelete(Admin admin)
+        {
+            _admindal.DeleteAdmin(admin);
+        }
+
+        public void AdminUpdate(Admin admin)
+        {
+            _admindal.UpdateAdmin(admin);
+        }
+
+        public Admin GetById(int id)
+        {
+            return _admindal.GetById(id);
+        }
+
+        public List<Admin> GetList()
+        {
+            return _admindal.ListAllAdmin();
         }
     }
 }
