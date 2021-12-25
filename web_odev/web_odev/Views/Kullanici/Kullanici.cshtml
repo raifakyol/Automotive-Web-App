@@ -1,0 +1,17 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Kullanici";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="typo">
+    <div class="container">
+        <div class="typo-title">
+            <h3>@localizer["SERVİS RANDEVU TALEBİNİZ OLUŞTURULDU"]</h3>
+        </div>
+        <div class="grid_3 grid_4 w3_agileits_icons_page">
+            <h3 class="agileits-icons-title">@localizer["Servis Randevu talebiniz onaylanınca vermiş olduğunuz telefon numarası ile tarafınıza dönüş sağlanacaktır."] </h3> <br /> <br />
+            <h3 class="agileits-icons-title">@localizer["AKYOL OTOMOTİV'İ TERCİH ETTİĞİNİZ İÇİN TEŞEKKÜRLER..."] </h3>
+        </div>
+    </div>
+</div>

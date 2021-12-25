@@ -150,6 +150,9 @@
   <data name="7 yaş üstü Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %30, kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim ve motor yağlarında %16 indirim" xml:space="preserve">
     <value>7 yaş üstü Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %30, kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim ve motor yağlarında %16 indirim</value>
   </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
   <data name="Adres:" xml:space="preserve">
     <value>Adres:</value>
   </data>
@@ -233,5 +236,8 @@
   </data>
   <data name="Zubizu indirim kampanyası başka bir indirim kampanyası ile birleştirilemez." xml:space="preserve">
     <value>Zubizu indirim kampanyası başka bir indirim kampanyası ile birleştirilemez.</value>
+  </data>
+  <data name="Çıkış" xml:space="preserve">
+    <value>Çıkış</value>
   </data>
 </root>

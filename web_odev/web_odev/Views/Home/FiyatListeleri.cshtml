@@ -1,4 +1,5 @@
-﻿@using EntityLayer.Concrete
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@using EntityLayer.Concrete
 @model List<Arac>
 @{
     ViewData["Title"] = "FiyatListeleri";
@@ -8,24 +9,24 @@
 <div class="typo">
     <div class="container">
         <div class="typo-title">
-            <h3>BİNEK ARAÇ FİYATLARI</h3>
+            <h3>@localizer["BİNEK ARAÇ FİYATLARI"]</h3>
         </div>
         <div class="grid_3 grid_4 w3_agileits_icons_page">
-            <h3 class="agileits-icons-title">İlgilendiğiniz model için aşağıdaki binek otomobil fiyat listesini inceleyebilirsiniz.</h3>
+            <h3 class="agileits-icons-title">@localizer["İlgilendiğiniz model için aşağıdaki binek otomobil fiyat listesini inceleyebilirsiniz."]</h3>
         </div>
         <div class="container">
             <div class="bs-docs-example">
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Marka</th>
-                            <th>Model</th>
-                            <th>Donanım</th>
-                            <th>Motor Hacmi</th>
-                            <th>Yakıt</th>
-                            <th>Vites</th>
+                            <th>@localizer["Marka"]</th>
+                            <th>@localizer["Model"]</th>
+                            <th>@localizer["Donanım"]</th>
+                            <th>@localizer["Motor Hacmi"]</th>
+                            <th>@localizer["Yakıt"]</th>
+                            <th>@localizer["Vites"]</th>
                             <th>Hp</th>
-                            <th>Fiyat</th>
+                            <th>@localizer["Fiyat"]</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,8 +37,8 @@
                                 <td>@item.Model</td>
                                 <td>@item.Donanim</td>
                                 <td>@item.Motor_hacmi</td>
-                                <td>@item.Yakit_tipi</td>
-                                <td>@item.Vites_tipi</td>
+                                <td>@localizer[@item.Yakit_tipi]</td>
+                                <td>@localizer[@item.Vites_tipi]</td>
                                 <td>@item.AracBg</td>
                                 <td>@item.Fiyat</td>
                             </tr>

@@ -1,4 +1,4 @@
-﻿
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @{
     ViewData["Title"] = "AdminLogin";
     Layout = "~/Views/Shared/Layout.cshtml";
@@ -73,15 +73,15 @@
         <div class="typo">
             <div class="container">
                 <div class="typo-title">
-                    <h3>ADMİN GİRİŞ</h3>
+                    <h3>@localizer["ADMİN GİRİŞ"]</h3>
                 </div>
-                <label for="uname"><b>Kullanıcı Adı</b></label>
+                <label for="uname"><b>@localizer["Kullanıcı Adı"]</b></label>
                 <input type="text" placeholder="Enter Username" name="Admin_UserName" required>
 
-                <label for="psw"><b>Şifre</b></label>
+                <label for="psw"><b>@localizer["Şifre"]</b></label>
                 <input type="password" placeholder="Enter Password" name="Password" required>
 
-                <button type="submit">Giriş</button>
+                <button type="submit">@localizer["Giriş"]</button>
             </div>
         </div>
     </form>

@@ -12,16 +12,17 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace web_odev.Controllers
 {
+
     public class LoginController : Controller
     {
         Context c = new Context();
-        [AllowAnonymous]
+        
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
-        [AllowAnonymous]
+
         [HttpPost]
         public async Task<IActionResult> Login(Admin p)
         {
@@ -32,18 +33,20 @@ namespace web_odev.Controllers
                 {
                     new Claim(ClaimTypes.Name,p.Admin_UserName)
                 };
-                var useridentity = new ClaimsIdentity(claims, "Login");
+                var useridentity = new ClaimsIdentity(claims, "A");
                 ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
                 await HttpContext.SignInAsync(principal);
                 return RedirectToAction("ServisRandevu", "Home");
             }
             return View();
         }
+
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> LogOut()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Login");
-        }
+        } 
     }
 }

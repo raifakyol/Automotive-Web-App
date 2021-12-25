@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.Repositories;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,9 +12,11 @@ using System.Threading.Tasks;
 
 namespace web_odev.Controllers
 {
+    [AllowAnonymous]
     public class RegisterController : Controller
     {
         AdminManager adm = new AdminManager(new AdminRepository());
+        Context c = new Context();
         [HttpGet]
         public IActionResult Register()
         {
@@ -22,8 +27,12 @@ namespace web_odev.Controllers
         {
             a.AdminRole = "B";
             adm.AdminAdd(a);
-
-            return RedirectToAction("Index","Home");
+            var datavalue = c.Admins.FirstOrDefault(x => x.Admin_UserName == a.Admin_UserName && x.Password == a.Password);
+            if (datavalue != null)
+            {
+                HttpContext.Session.SetString("Admin_UserName", a.Admin_UserName);  
+            }
+            return RedirectToAction("Login", "Login");
         }
     }
 }

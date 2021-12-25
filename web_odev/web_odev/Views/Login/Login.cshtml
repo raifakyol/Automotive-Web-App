@@ -1,4 +1,4 @@
-﻿
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/Layout.cshtml";
@@ -9,57 +9,61 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+        form {
+            border: 3px solid #f1f1f1;
+        }
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
 
-button:hover {
-  opacity: 0.8;
-}
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+            button:hover {
+                opacity: 0.8;
+            }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
 
-img.avatar {
-  width: 30%;
-  border-radius: 50%;
-}
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
 
-.container {
-  padding: 16px;
-}
+        img.avatar {
+            width: 30%;
+            border-radius: 50%;
+        }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+        .container {
+            padding: 16px;
+        }
 
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
     </style>
 </head>
 <body>
@@ -68,18 +72,15 @@ span.psw {
         <div class="typo">
             <div class="container">
                 <div class="typo-title">
-                    <h3>GİRİŞ</h3>
+                    <h3>@localizer["GİRİŞ"]</h3>
                 </div>
-                <div class="grid_3 grid_4 w3_agileits_icons_page">
-                    <h3 class="agileits-icons-title">Servis Randevusu almak için giriş yapmanız gerekmektedir.</h3>
-                </div>
-                <label for="uname"><b>Kullanıcı Adı</b></label>
+                <label for="uname"><b>@localizer["Kullanıcı Adı"]</b></label>
                 <input type="text" placeholder="Enter Username" name="Admin_UserName" required>
 
-                <label for="psw"><b>Şifre</b></label>
+                <label for="psw"><b>@localizer["Şifre"]</b></label>
                 <input type="password" placeholder="Enter Password" name="Password" required>
 
-                <button type="submit">Giriş</button>
+                <button type="submit">@localizer["Giriş"]</button>
             </div>
         </div>
     </form>

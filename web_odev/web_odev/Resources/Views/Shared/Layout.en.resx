@@ -150,6 +150,9 @@
   <data name="7 yaş üstü Volkswagen Binek Araç modellerine yapılacak periyodik bakım, mekanik ve elektrik işlerinde kullanılan parça ve bunların işçiliklerinde %30, kampanya kapsamında belirlenmiş lastik markalarında geçerli olmak üzere %16 indirim ve motor yağlarında %16 indirim" xml:space="preserve">
     <value>periodic maintenance of Volkswagen Passenger Car models over 7 years of age, 30% discount on parts used in mechanical and electrical works and their workmanship, 16% discount on tire brands specified within the scope of the campaign and 16% discount on engine oils</value>
   </data>
+  <data name="Admin" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
   <data name="Adres:" xml:space="preserve">
     <value>Address:</value>
   </data>
@@ -233,5 +236,8 @@
   </data>
   <data name="Zubizu indirim kampanyası başka bir indirim kampanyası ile birleştirilemez." xml:space="preserve">
     <value>The Zubizu discount campaign cannot be combined with any other discount campaign.</value>
+  </data>
+  <data name="Çıkış" xml:space="preserve">
+    <value>EXIT</value>
   </data>
 </root>

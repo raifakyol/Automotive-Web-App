@@ -910,8 +910,7 @@ p.w3l_sub_para_agile {
 /*--about page end here--*/
 /*-- services --*/
 .w3-agile-services {
-    background: url(~/web/images/oto.jpg) no-repeat 0px 0px;
-    background-size: cover;
+    background: url(~/web/images/s3.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1024,8 +1023,8 @@ i.fa.fa-truck, i.fa.fa-subway,i.fa.fa-ship{
 .services-right-grids:nth-child(2){
 	margin: 3em 0 0 0;
 }
-.services-icon-info p{
-	color:#fff;
+.services-icon-info h3 {
+    color: black;
     font-size: .9em;
     margin: 1em 0 0 0;
     line-height: 1.8em;
