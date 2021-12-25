@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,39 +9,41 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class GenericRepository<T> : IGenericDal<T> where T : class
+    public class KullaniciRepository : IKullaniciDal
     {
-        public void Delete(T t)
+        public void AddKullanici(Kullanici kullanici)
         {
             using var c = new Context();
-            c.Remove(t);
+            c.Add(kullanici);
             c.SaveChanges();
         }
 
-        public T GetById(int id)
+        public void DeleteKullanici(Kullanici kullanici)
         {
             using var c = new Context();
-            return c.Set<T>().Find(id);
-        }
-
-        public List<T> GetListAll()
-        {
-            using var c = new Context();
-            return c.Set<T>().ToList();
-        }
-
-        public void Insert(T t)
-        {
-            using var c = new Context();
-            c.Add(t);
+            c.Remove(kullanici);
             c.SaveChanges();
         }
 
-        public void Update(T t)
+        public Kullanici GetById(int id)
         {
             using var c = new Context();
-            c.Update(t);
+            return c.Users.Find(id);
+        }
+
+        public List<Kullanici> ListAllKullanici()
+        {
+            using var c = new Context();
+            return c.Users.ToList();
+        }
+
+        public void UpdateKullanici(Kullanici kullanici)
+        {
+            using var c = new Context();
+            c.Update(kullanici);
             c.SaveChanges();
         }
+
+
     }
 }

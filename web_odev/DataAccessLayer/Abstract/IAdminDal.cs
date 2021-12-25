@@ -9,6 +9,10 @@ namespace DataAccessLayer.Abstract
 {
     public interface IAdminDal
     {
-        void Insert(Admin admin);
+        List<Admin> ListAllAdmin();
+        void AddAdmin(Admin admin);
+        void DeleteAdmin(Admin admin);
+        void UpdateAdmin(Admin admin);
+        Admin GetById(int id);
     }
 }

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20211216100014_mig2")]
-    partial class mig2
+    [Migration("20211217222355_mig4")]
+    partial class mig4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,6 +19,30 @@ namespace DataAccessLayer.Migrations
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
+
+            modelBuilder.Entity("EntityLayer.Concrete.Admin", b =>
+                {
+                    b.Property<int>("AdminID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("AdminRole")
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("Admin_UserName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasKey("AdminID");
+
+                    b.ToTable("Admins");
+                });
 
             modelBuilder.Entity("EntityLayer.Concrete.Arac", b =>
                 {
@@ -92,9 +116,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("AracID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Kullanici_AdSoyad")
                         .HasColumnType("nvarchar(max)");
 
@@ -114,8 +135,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("KullaniciID");
-
-                    b.HasIndex("AracID");
 
                     b.ToTable("Users");
                 });
@@ -160,17 +179,6 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Arac");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.Kullanici", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Arac", "Arac")
-                        .WithMany("Users")
-                        .HasForeignKey("AracID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Arac");
-                });
-
             modelBuilder.Entity("EntityLayer.Concrete.Opsiyonlar", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Arac", "Arac")
@@ -187,8 +195,6 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Gallerys");
 
                     b.Navigation("Options");
-
-                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }
