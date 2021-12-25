@@ -1,4 +1,4 @@
-﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
@@ -19,17 +19,17 @@ namespace BusinessLayer.Concrete
         }
         public void AracAdd(Arac arac)
         {
-            throw new NotImplementedException();
+            _aracDal.AddArac(arac);
         }
 
         public void AracDelete(Arac arac)
         {
-            throw new NotImplementedException();
+            _aracDal.DeleteArac(arac);
         }
 
         public void AracUpdate(Arac arac)
         {
-            throw new NotImplementedException();
+            _aracDal.UpdateArac(arac);
         }
 
         public override bool Equals(object obj)
@@ -39,7 +39,7 @@ namespace BusinessLayer.Concrete
 
         public Arac GetById(int id)
         {
-            throw new NotImplementedException();
+            return _aracDal.GetById(id);
         }
 
         public List<Arac> GetList()
